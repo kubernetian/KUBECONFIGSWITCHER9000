@@ -2,6 +2,15 @@
 
 ![KUBECONFIGSWITCHER9000](mediafiles/kubeconfigswitcher9000.jpg)
 
+# Table of contents
+
+  1. [Introduction](#introduction)
+  2. [Prerequisites](#prerequisites)
+  3. [How to install?](#how-to-install)
+  4. [Example](#example)
+
+# Introduction
+
 Hi, I'm Joris and I'm sick and tired of switching kubernetes contexts. That's why 
 I created this project. If you're managing multiple kubernetes clusters with an 
 admin account and you have X amount of configs in your `~/.kube/config` folder 
@@ -10,7 +19,7 @@ use this.
 I know, there are a lot of other tools on the "OpenSource Market" but this one 
 just does what it needs to do, no further bullshit. 
 
-## Prerequisites 
+# Prerequisites 
 
 Be sure you have a named copy of your kubeconfig in your `~/.kube` folder. For 
 example :
@@ -24,7 +33,7 @@ example :
 > :warning: **Lost kubeconfigs are not my responsibility.**
 
 
-## How to install? 
+# How to install? 
 
 Well that is pretty simple. 
 
@@ -34,11 +43,11 @@ Well that is pretty simple.
 * `exec $SHELL` (Optional step, re-opening your terminal will do the trick as well) 
 * You will be able to use `KCS9` as a command from now on
 
-### ARCH
+## ARCH
 
 There is an AUR package available called `kcs9-git`. Install with your favourite AUR helper!
 
-## Example 
+# Example 
 
         user@ubuntu:~# KCS9
         1) kube1_config
