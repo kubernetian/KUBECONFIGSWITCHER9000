@@ -34,6 +34,10 @@ Well that is pretty simple.
 * `exec $SHELL` (Optional step, re-opening your terminal will do the trick as well) 
 * You will be able to use `KCS9` as a command from now on
 
+### ARCH
+
+There is an AUR package available called `kcs9-git`. Install with your favourite AUR helper!
+
 ## Example 
 
         user@ubuntu:~# KCS9
