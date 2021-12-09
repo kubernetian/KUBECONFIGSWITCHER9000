@@ -9,7 +9,6 @@ selectfiles=()
 for file in "${files[@]}"
 do
   line=$(head -n 1 ~/.kube/$file)
-  echo $line
   if [[ $line = "apiVersion: v1" ]]; then
           selectfiles+=($file)
   fi
