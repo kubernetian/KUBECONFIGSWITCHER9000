@@ -15,6 +15,8 @@ just does what it needs to do, no further bullshit.
 We'll that is pretty simple. 
 
 * clone this git 
-* put the script in your `/usr/local/bin` folder
+* put the KCS9 file in your `/usr/local/bin` folder
+* edit the permissions on the file `chmod +x /usr/local/bin/KCS9`
 * (optional step) `exec bash` just re-open your terminal will do the trick as well. 
+* you will be able to use `KCS9` as a command from now on
 
