@@ -20,3 +20,29 @@ We'll that is pretty simple.
 * (optional step) `exec bash` just re-open your terminal will do the trick as well. 
 * you will be able to use `KCS9` as a command from now on
 
+## Example 
+
+        user@ubuntu:~# KCS9
+        1) kube1_config
+        2) kube2_config
+        3) kube3_config
+        Which config do you want to use? 2
+        Selected config: kube2_config
+        user@ubuntu:~# cat .kube/config
+        this is the kube2 config
+        user@ubuntu:~# KCS9
+        1) kube1_config
+        2) kube2_config
+        3) kube3_config
+        Which config do you want to use? 1
+        Selected config: kube1_config
+        user@ubuntu:~# cat .kube/config
+        this is the kube1 config
+        user@ubuntu:~# KCS9
+        1) kube1_config
+        2) kube2_config
+        3) kube3_config
+        Which config do you want to use? 3
+        Selected config: kube3_config
+        user@ubuntu:~# cat .kube/config
+        this is the kube3 config
