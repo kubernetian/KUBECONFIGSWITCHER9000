@@ -10,6 +10,20 @@ use this.
 I know, there are a lot of other tools on the "OpenSource Market" but this one 
 just does what it needs to do, no further bullshit. 
 
+## Prerequisites 
+
+Be sure you have a named copy of your kubeconfig in your `~/.kube` folder. For 
+example :
+
+        user@ubuntu:~# ls -l 
+                kube1_config
+                kube2_config
+                kube3_config
+                config
+
+> :warning: **Lost kubeconfigs are not my responsibility.**
+
+
 ## How to install? 
 
 Well that is pretty simple. 
