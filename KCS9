@@ -1,11 +1,21 @@
 #!/bin/bash
 
-rm -rf ~/.kube/config
-files=($(ls ~/.kube))
-
 PS3="Which config do you want to use? "
 
-select file in "${files[@]}"
+rm -rf ~/.kube/config
+files=($(ls ~/.kube))
+selectfiles=()
+
+for file in "${files[@]}"
+do
+  line=$(head -n 1 ~/.kube/$file)
+  echo $line
+  if [[ $line = "apiVersion: v1" ]]; then
+          selectfiles+=($file)
+  fi
+done
+
+select file in "${selectfiles[@]}"
 do
   echo "Selected config: $file"
   KUBECONFIG=$file
