@@ -19,7 +19,6 @@ done
 select file in "${selectfiles[@]}"
 do
   echo "Selected config: $file"
-  KUBECONFIG=$file
   cp ~/.kube/$file ~/.kube/config
   exit 1
 done
