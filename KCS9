@@ -8,10 +8,12 @@ selectfiles=()
 
 for file in "${files[@]}"
 do
-  line=$(head -n 1 ~/.kube/$file)
-  if [[ $line = "apiVersion: v1" ]]; then
-          selectfiles+=($file)
-  fi
+  if [[ -f ~/.kube/$file ]]; then 
+    line=$(head -n 1 ~/.kube/$file)
+    if [[ $line = "apiVersion: v1" ]]; then
+            selectfiles+=($file)
+    fi
+  fi 
 done
 
 select file in "${selectfiles[@]}"
