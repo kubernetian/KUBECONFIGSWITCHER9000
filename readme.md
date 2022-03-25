@@ -80,3 +80,5 @@ There is an AUR package available called `kcs9-git`. Install with your favourite
         Selected config: kube3_config
         user@ubuntu:~# cat .kube/config
         this is the kube3 config
+
+[:coffee:](https://www.buymeacoffee.com/kubernetian)
